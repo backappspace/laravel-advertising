@@ -35,8 +35,8 @@ class AdvertisingServiceProvider extends ServiceProvider
         $this->registerRepositories();
         $this->registerDrivers();
 
-        $this->app->bind(Advertising::class, function () {
-            return new Advertising(
+        $this->app->bind(AdvertisingManager::class, function () {
+            return new AdvertisingManager(
                 $this->app->make(RedisDriver::class),
                 $this->app->make(BannersRepository::class),
                 $this->app->make('config')

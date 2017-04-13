@@ -10,7 +10,7 @@ use Illuminate\Config\Repository AS Config;
  * Class Advertising
  * @package App\Exceptions\AdvertisingExtension
  */
-class Advertising
+class AdvertisingManager
 {
     /**
      * @var DriverInterface
