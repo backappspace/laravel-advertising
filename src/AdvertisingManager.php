@@ -4,7 +4,6 @@ namespace Torondor\LaravelAdvertising;
 
 use Torondor\LaravelAdvertising\Drivers\DriverInterface;
 use Torondor\LaravelAdvertising\Repositories\BannersRepository;
-use Illuminate\Config\Repository AS Config;
 
 /**
  * Class Advertising
@@ -23,16 +22,16 @@ class AdvertisingManager
     private $banners;
 
     /**
-     * @var Config
+     * @var array
      */
     private $config;
 
     /**
      * @param DriverInterface $driver
      * @param BannersRepository $banners
-     * @param Config $config
+     * @param array $config
      */
-    public function __construct(DriverInterface $driver, BannersRepository $banners, Config $config)
+    public function __construct(DriverInterface $driver, BannersRepository $banners, array $config)
     {
         $this->driver = $driver;
         $this->banners = $banners;
@@ -46,7 +45,7 @@ class AdvertisingManager
      */
     public function getBanner($key, $position)
     {
-        $bannerKey  = array_search($position, $this->config->get('laravel-advertising.banners'));
+        $bannerKey  = array_search($position, $this->config);
         $seen       = ($data = $this->driver->get($key, $bannerKey)) ? (json_decode($data)) : [];
         $banner     = $this->banners->search($position, ['seen' => $seen, 'first' => true])->first();
 

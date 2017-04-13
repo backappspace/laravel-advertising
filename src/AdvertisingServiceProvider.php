@@ -44,7 +44,7 @@ class AdvertisingServiceProvider extends ServiceProvider
             return new AdvertisingManager(
                 $this->app->make(RedisDriver::class),
                 $this->app->make(BannersRepository::class),
-                $this->app->make('config')
+                $this->app['config']['laravel-advertising.banners']
             );
         });
     }

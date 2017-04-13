@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "813d0aca0cef53064736ac5aa607658d",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "589023c40621d70485becde18340a28f",
+    "packages": [
         {
             "name": "doctrine/inflector",
             "version": "dev-master",
@@ -72,7 +71,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2016-05-12T17:23:41+00:00"
+            "time": "2016-05-12 17:23:41"
         },
         {
             "name": "illuminate/contracts",
@@ -114,7 +113,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-03-29T13:17:47+00:00"
+            "time": "2017-03-29 13:17:47"
         },
         {
             "name": "illuminate/support",
@@ -171,7 +170,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-04-09T14:34:57+00:00"
+            "time": "2017-04-09 14:34:57"
         },
         {
             "name": "paragonie/random_compat",
@@ -269,16 +268,17 @@
                 "predis",
                 "redis"
             ],
-            "time": "2016-11-22T14:32:30+00:00"
+            "time": "2016-11-22 14:32:30"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": {
+    "platform": {
         "php": ">=5.6"
-    }
+    },
+    "platform-dev": []
 }
