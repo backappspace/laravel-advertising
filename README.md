@@ -12,6 +12,10 @@ Installation:
         }
     ],
     
+    "require": {
+        "torondor/laravel-advertising": "dev-develop"
+    },
+    
 to your composer.json
     
 2) Add Torondor\LaravelAdvertising\AdvertisingServiceProvider::class to config/app.js
