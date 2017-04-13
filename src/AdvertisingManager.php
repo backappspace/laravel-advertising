@@ -46,7 +46,7 @@ class AdvertisingManager
      */
     public function getBanner($key, $position)
     {
-        $bannerKey  = array_search($position, $this->config->get('constants.banners'));
+        $bannerKey  = array_search($position, $this->config->get('laravel-advertising.banners'));
         $seen       = ($data = $this->driver->get($key, $bannerKey)) ? (json_decode($data)) : [];
         $banner     = $this->banners->search($position, ['seen' => $seen, 'first' => true])->first();
 

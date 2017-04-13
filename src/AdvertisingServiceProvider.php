@@ -23,6 +23,11 @@ class AdvertisingServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/resources/migrations/' => database_path('migrations')
         ], 'migrations');
+
+        // config
+        $this->publishes([
+            __DIR__ . '/config/laravel-advertising' => config_path('laravel-advertising.php')
+        ], 'config');
     }
 
     /**
