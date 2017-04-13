@@ -67,7 +67,7 @@ class AdvertisingServiceProvider extends ServiceProvider
     private function registerRepositories()
     {
         $this->app->bind(BannersRepository::class, function () {
-            $banner = env('ADVERTISEMENT_BANNER_MODEL', App\Banner::class);
+            $banner = $this->app['config']['laravel-advertising.banner_model'];
             return new BannersRepository(
                 new $banner
             );

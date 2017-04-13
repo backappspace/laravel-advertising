@@ -11,6 +11,8 @@ return [
     |
     */
 
+    'banner_model' => 'App\Banner',
+
     'banners' => [
 
     ],
