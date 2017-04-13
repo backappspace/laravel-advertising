@@ -1,11 +1,12 @@
 {
     "name": "torondor/laravel-advertising",
     "description": "Package to show banners",
-    "require-dev": {
+    "require": {
         "php": ">=5.6",
         "predis/predis": "^1.1",
         "illuminate/support": "^5.4"
     },
+    "require-dev": {},
     "authors": [
         {
             "name": "torondor",
@@ -17,6 +18,5 @@
             "Torondor\\LaravelAdvertising\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }
