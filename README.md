@@ -22,5 +22,5 @@ To customize the migration, publish it with the following command:
 
 php artisan vendor:publish --provider="Torondor\LaravelAdvertising\AdvertisingServiceProvider" --tag="migrations"
 
-You can use you existent model by set it`s name in ADVERTISEMENT_BANNER_MODEL in .env and your banners table must contain 
-'positions'  column
+You can use you existent model by set it's name in ADVERTISEMENT_BANNER_MODEL in .env and your banners table must contain 
+'position'  column
