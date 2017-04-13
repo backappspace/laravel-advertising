@@ -24,3 +24,14 @@ php artisan vendor:publish --provider="Torondor\LaravelAdvertising\AdvertisingSe
 
 You can use you existent model by set it's name in ADVERTISEMENT_BANNER_MODEL in .env and your banners table must contain 
 'position'  column
+
+4) Make config/constants.php file and put there banners positions config, like this: 
+
+    'banners' => [
+        'under_menu'    => 1,
+        'sidebar'       => 2,
+        'over_footer'   => 3,
+        'over_comments' => 4
+    ],
+    
+    key must be 'banners', other data can be any you want
