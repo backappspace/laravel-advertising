@@ -18,7 +18,7 @@ Installation:
     
 to your composer.json
     
-2) Add Torondor\LaravelAdvertising\AdvertisingServiceProvider::class to config/app.js
+2) Add Torondor\LaravelAdvertising\AdvertisingServiceProvider::class to config/app.php
 
 3) php artisan migrate --path="/vendor/torondor/laravel-advertising/src/resources/migrations" to make migrations
 
