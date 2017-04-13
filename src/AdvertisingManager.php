@@ -48,7 +48,7 @@ class AdvertisingManager
     {
         $bannerKey  = array_search($position, $this->config->get('constants.banners'));
         $seen       = ($data = $this->driver->get($key, $bannerKey)) ? (json_decode($data)) : [];
-        $banner     = $this->banners->search($position, [], ['seen' => $seen, 'first' => true])->first();
+        $banner     = $this->banners->search($position, ['seen' => $seen, 'first' => true])->first();
 
         if (empty($banner)) {
             $this->driver->delete($key, $bannerKey);
