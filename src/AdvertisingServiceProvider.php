@@ -26,7 +26,7 @@ class AdvertisingServiceProvider extends ServiceProvider
 
         // config
         $this->publishes([
-            __DIR__ . '/config/laravel-advertising' => config_path('laravel-advertising.php')
+            __DIR__ . '/config/laravel-advertising.php' => config_path('laravel-advertising.php')
         ], 'config');
     }
 
