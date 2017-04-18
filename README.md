@@ -5,15 +5,8 @@ Installation:
 
 1) Add
 
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:Torondor27/laravel-advertising.git"
-        }
-    ],
-    
     "require": {
-        "torondor/laravel-advertising": "dev-develop"
+        "torondor/laravel-advertising": "0.1.0"
     },
     
 to your composer.json
