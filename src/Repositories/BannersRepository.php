@@ -15,7 +15,13 @@ class BannersRepository extends AbstractRepository
      */
     public function search($pos, array $options = [])
     {
-        $query = $this->model->where('position', '=', "{$pos}")->orderBy('id', 'ASC');
+        $now = new Carbon();
+        $query = $this->model
+            ->where('position', '=', "{$pos}")
+            ->where('start_show', '<=', $now)
+            ->where('end_show', '>=', $now)
+            ->orderBy('id', 'ASC')
+        ;
 
         if (!empty($options['first'])) {
             $query = $query->limit(1);
